@@ -1,0 +1,16 @@
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.AssemblyReference.cache
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.SuggestedBindingRedirects.cache
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultarComprobantes.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro2.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro3.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro4.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro5.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro6.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Properties.Resources.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.GenerateResource.cache
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.CoreCompileInputs.cache
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe.config
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.pdb
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb

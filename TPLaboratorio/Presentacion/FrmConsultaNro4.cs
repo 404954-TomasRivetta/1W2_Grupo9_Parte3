@@ -20,6 +20,11 @@ namespace TPLaboratorio.Presentacion
             servicio = new ServicioConsultasImpl();
         }
 
+        private void FrmConsultaNro4_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //Suerte...
 
     }

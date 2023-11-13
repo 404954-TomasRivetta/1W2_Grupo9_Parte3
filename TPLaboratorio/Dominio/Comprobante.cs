@@ -11,12 +11,42 @@ namespace TPLaboratorio.Dominio
         public int IdCliente { get; set; }
         public int IdForma_pago { get; set; }
         public int IdEmpleado { get; set; }
+        public int CantEntradasDesde { get; set; }
+        public int CantEntradasHasta { get; set; }
         public int CantEntradas { get; set; }
         public List<Ticket> lTickets { get; set; }
+        public int IdComprobante { get;set; }
+        public string NombreCliente { get; set; }
+        public string NombreEmpleado { get; set; }
+        public string FormaPago { get; set; }
         public Comprobante()
         {
             lTickets = new List<Ticket>();
         }
+        public Comprobante(int idCliente,int idFormaPago,int idEmpleado,int cantEntradasDesde,int cantEntradasHasta,/*int cantEntradas,*/int idComprobante)        
+        {
+            IdCliente=idCliente;
+            IdForma_pago=idFormaPago;
+            IdEmpleado=idEmpleado;
+            CantEntradasDesde = cantEntradasDesde;
+            CantEntradasHasta=cantEntradasHasta;
+            //CantEntradas=cantEntradas;
+            IdComprobante=idComprobante;
+        }
+        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,int idComprobante,string nombreCliente,string nombreEmpleado,string formaPago)
+        {
+            IdCliente = idCliente;
+            IdForma_pago = idFormaPago;
+            IdEmpleado = idEmpleado;
+            CantEntradasDesde = cantEntradasDesde;
+            CantEntradasHasta = cantEntradasHasta;
+            //CantEntradas=cantEntradas;
+            IdComprobante = idComprobante;
+            NombreCliente=nombreCliente;
+            FormaPago = formaPago;
+            NombreEmpleado=nombreEmpleado;
+        }
+
         public void AgregarTicket(Ticket ticket)
         {
             lTickets.Add(ticket);

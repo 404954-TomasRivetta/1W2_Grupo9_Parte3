@@ -15,7 +15,7 @@ namespace TPLaboratorio.Datos
 
         public HelperDao()
         {
-            conexion = new SqlConnection(@"Data Source=DESKTOP-U9PV955\SQLEXPRESS;Initial Catalog=DB_OrdenesParcial;Integrated Security=True");
+            conexion = new SqlConnection(Properties.Resources.CadenaConexion);
         }
 
         public static HelperDao ObtenerInstancia()
@@ -81,6 +81,18 @@ namespace TPLaboratorio.Datos
             dt.Load(comando.ExecuteReader());
             conexion.Close();
             return dt;
+        }
+        public DataTable ConsultaSql(string consulta)
+        {
+            conexion.Open();
+            DataTable tabla = new DataTable();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection= conexion;
+            comando.CommandType = CommandType.Text;
+            comando.CommandText=consulta;
+            tabla.Load(comando.ExecuteReader());
+            conexion.Close();
+            return tabla;
         }
 
         public int EjecutarSQL(string strSql, List<Parametro> values)
