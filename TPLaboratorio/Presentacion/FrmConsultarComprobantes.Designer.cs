@@ -35,6 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDesdeImporte = new System.Windows.Forms.TextBox();
+            this.txtHastaImporte = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtHasta = new System.Windows.Forms.TextBox();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.txtFormaPago = new System.Windows.Forms.TextBox();
@@ -43,18 +48,13 @@
             this.txtComprobante = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvComprobantes = new System.Windows.Forms.DataGridView();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtHastaImporte = new System.Windows.Forms.TextBox();
-            this.txtDesdeImporte = new System.Windows.Forms.TextBox();
             this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCantEntradas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnFiltrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComprobantes)).BeginInit();
             this.SuspendLayout();
@@ -143,6 +143,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
+            // txtDesdeImporte
+            // 
+            this.txtDesdeImporte.Location = new System.Drawing.Point(243, 290);
+            this.txtDesdeImporte.Name = "txtDesdeImporte";
+            this.txtDesdeImporte.Size = new System.Drawing.Size(40, 24);
+            this.txtDesdeImporte.TabIndex = 22;
+            // 
+            // txtHastaImporte
+            // 
+            this.txtHastaImporte.Location = new System.Drawing.Point(369, 290);
+            this.txtHastaImporte.Name = "txtHastaImporte";
+            this.txtHastaImporte.Size = new System.Drawing.Size(40, 24);
+            this.txtHastaImporte.TabIndex = 21;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(289, 293);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 18);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "y menor a";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(175, 293);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 18);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "mayor a";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(111, 293);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 18);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Importe";
+            // 
             // txtHasta
             // 
             this.txtHasta.Location = new System.Drawing.Point(312, 245);
@@ -212,57 +253,6 @@
             this.dgvComprobantes.Size = new System.Drawing.Size(545, 192);
             this.dgvComprobantes.TabIndex = 7;
             // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Location = new System.Drawing.Point(443, 364);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(117, 23);
-            this.btnFiltrar.TabIndex = 8;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(111, 293);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 18);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Importe";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(175, 293);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 18);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "mayor a";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(289, 293);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 18);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "y menor a";
-            // 
-            // txtHastaImporte
-            // 
-            this.txtHastaImporte.Location = new System.Drawing.Point(369, 290);
-            this.txtHastaImporte.Name = "txtHastaImporte";
-            this.txtHastaImporte.Size = new System.Drawing.Size(40, 24);
-            this.txtHastaImporte.TabIndex = 21;
-            // 
-            // txtDesdeImporte
-            // 
-            this.txtDesdeImporte.Location = new System.Drawing.Point(243, 290);
-            this.txtDesdeImporte.Name = "txtDesdeImporte";
-            this.txtDesdeImporte.Size = new System.Drawing.Size(40, 24);
-            this.txtDesdeImporte.TabIndex = 22;
-            // 
             // ColId
             // 
             this.ColId.HeaderText = "ID";
@@ -301,10 +291,21 @@
             this.ColImporte.Name = "ColImporte";
             this.ColImporte.ReadOnly = true;
             // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(443, 364);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(117, 23);
+            this.btnFiltrar.TabIndex = 8;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
             // FrmConsultarComprobantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(572, 597);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvComprobantes);
