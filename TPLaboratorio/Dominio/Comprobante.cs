@@ -19,6 +19,9 @@ namespace TPLaboratorio.Dominio
         public string NombreCliente { get; set; }
         public string NombreEmpleado { get; set; }
         public string FormaPago { get; set; }
+        public decimal ImporteDesde { get; set; }
+        public decimal ImporteHasta { get; set; }
+        public decimal Importe { get; set; }
         public Comprobante()
         {
             lTickets = new List<Ticket>();
@@ -33,7 +36,7 @@ namespace TPLaboratorio.Dominio
             //CantEntradas=cantEntradas;
             IdComprobante=idComprobante;
         }
-        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,int idComprobante,string nombreCliente,string nombreEmpleado,string formaPago)
+        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,int idComprobante, string nombreCliente, string nombreEmpleado, string formaPago, decimal importeDesde, decimal importeHasta, decimal importe)
         {
             IdCliente = idCliente;
             IdForma_pago = idFormaPago;
@@ -42,11 +45,24 @@ namespace TPLaboratorio.Dominio
             CantEntradasHasta = cantEntradasHasta;
             //CantEntradas=cantEntradas;
             IdComprobante = idComprobante;
-            NombreCliente=nombreCliente;
+            NombreCliente = nombreCliente;
             FormaPago = formaPago;
-            NombreEmpleado=nombreEmpleado;
+            NombreEmpleado = nombreEmpleado;
+            ImporteDesde = importeDesde;
+            ImporteHasta = importeHasta;
+            Importe = importe;
         }
-
+        public Comprobante(int idComprobante, int idCliente, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,decimal importeDesde, decimal importeHasta)
+        {
+            IdCliente = idCliente;
+            IdEmpleado = idEmpleado;
+            CantEntradasDesde = cantEntradasDesde;
+            CantEntradasHasta = cantEntradasHasta;
+            //CantEntradas=cantEntradas;
+            IdComprobante = idComprobante;
+            ImporteDesde = importeDesde;
+            ImporteHasta = importeHasta;
+        }
         public void AgregarTicket(Ticket ticket)
         {
             lTickets.Add(ticket);
