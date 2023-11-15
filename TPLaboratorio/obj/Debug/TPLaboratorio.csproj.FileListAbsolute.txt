@@ -14,3 +14,20 @@ D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.
 D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.pdb
 D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
 D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe.config
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.pdb
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.Form1.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultarComprobantes.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro2.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro3.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro4.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro5.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaNro6.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Properties.Resources.resources
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.GenerateResource.cache
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
+C:\Users\Pc\Desktop\ProyectoLab\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb
