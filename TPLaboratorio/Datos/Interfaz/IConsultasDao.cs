@@ -19,5 +19,7 @@ namespace TPLaboratorio.Datos.Interfaz
         List<FormaPago> TraerFormaPagos();
         List<Director> ObtenerDirectores(); //nico valen
         List<TipoPelicula> ObtenerGeneros(); //nico valen
+
+        DataTable TraerDirector(DateTime fechaLimite, int idDir, int idG); //nico y vale
     }
 }

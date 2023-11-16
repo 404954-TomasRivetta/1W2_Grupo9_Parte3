@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
+using TPLaboratorio.Dominio;
 using TPLaboratorio.Servicio.Implementacion;
 using TPLaboratorio.Servicio.Interfaz;
 
@@ -17,23 +19,42 @@ namespace TPLaboratorio.Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cargarComboDirectores(cboDirectores, "SP_CONSULTAR_DIRECTORES");
-            cargarComboGeneros(cboGeneros, "SP_CONSULTAR_GENEROS");
+            cargarComboDirectores();
+            cargarComboGeneros();
         }
 
-        private void cargarComboDirectores(ComboBox combo, string nombreSP)
+        private void cargarComboDirectores()
         {
-            combo.DataSource = servicio.ObtenerDirectores();
-            combo.ValueMember = "id";
-            combo.DisplayMember = "Nombre";
+            cboDirectores.DataSource = servicio.ObtenerDirectores();
+            cboDirectores.ValueMember = "id";
+            cboDirectores.DisplayMember = "Nombre";
         }
 
-        private void cargarComboGeneros(ComboBox combo, string nombreSP)
+        private void cargarComboGeneros()
         {
-            combo.DataSource = servicio.ObtenerGeneros();
-            combo.ValueMember = "id";
-            combo.DisplayMember = "Nombre";
+            cboGeneros.DataSource = servicio.ObtenerGeneros();
+            cboGeneros.ValueMember = "id";
+            cboGeneros.DisplayMember = "Nombre";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Director d = (Director)cboDirectores.SelectedItem;
+            TipoPelicula t = (TipoPelicula)cboGeneros.SelectedItem;
+            DataTable tabla = servicio.TraerDirector(dtpLim.Value, d.id, t.id);
+            dgvDir.Rows.Clear();
+            foreach (DataRow fila in tabla.Rows)
+            {
+                dgvDir.Rows.Add(new object[] {
+                    fila["nombre"].ToString(),
+                     fila["apellido"].ToString(),
+                    fila["personas"].ToString(),
+                    fila["recaudacion"].ToString(),
+                    t.Nombre.ToString()
+                });
+
+
+            }
+        }
     }
 }

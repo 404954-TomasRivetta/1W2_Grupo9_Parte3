@@ -115,7 +115,7 @@ namespace TPLaboratorio.Datos.Implementacion
         public List<TipoPelicula> ObtenerGeneros()
         {
             List<TipoPelicula> lGeneros = new List<TipoPelicula>();
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_GENEROS");
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_TIPOS_PELICULAS");
             foreach (DataRow fila in tabla.Rows)
             {
                 int id = Convert.ToInt32(fila[0]);
@@ -151,6 +151,20 @@ namespace TPLaboratorio.Datos.Implementacion
             table = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_RESERVAS]", lst);
 
             return table;
+        }
+
+        public DataTable TraerDirector(DateTime fechaLimite, int idDir, int idG)
+        {
+            DataTable Ex = new DataTable();
+
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@fecha_menor", fechaLimite));
+            lst.Add(new Parametro("@director", idDir));
+            lst.Add(new Parametro("@genero", idG));
+
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_DIR_GEN]", lst);
+
+            return tabla;
         }
     }
 }

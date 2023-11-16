@@ -19,5 +19,6 @@ namespace TPLaboratorio.Servicio.Interfaz
         List<Empleado> TraerEmpleados();
         List<FormaPago> TraerFormaPago();
         //Acá simplemente pondrán el mismo método hecho en el dao...
+        DataTable TraerDirector(DateTime fechaLimite, int idDir, int idG);
     }
 }

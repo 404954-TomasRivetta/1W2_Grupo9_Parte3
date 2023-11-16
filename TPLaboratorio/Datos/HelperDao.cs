@@ -11,7 +11,7 @@ namespace TPLaboratorio.Datos
 
         public HelperDao()
         {
-            conexion = new SqlConnection(Properties.Resources.CadenaConexion404954);
+            conexion = new SqlConnection(@"Data Source=localhost;Initial Catalog=lc_tpi_cine;Integrated Security=True");
         }
 
         public static HelperDao ObtenerInstancia()

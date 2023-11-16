@@ -54,3 +54,17 @@ C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.c
 C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.CoreCompileInputs.cache
 C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
 C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe.config
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.exe
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\bin\Debug\TPLaboratorio.pdb
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.Form1.resources
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultaF.resources
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultarComprobantes.resources
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultarReservas.resources
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Properties.Resources.resources
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
+C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb

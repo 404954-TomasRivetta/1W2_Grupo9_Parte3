@@ -52,6 +52,11 @@ namespace TPLaboratorio.Servicio.Implementacion
             return dao.TraerReservaFiltrada(nombreReserva, fechaReserva);
         }
 
+        public DataTable TraerDirector(DateTime fechaLimite, int idDir, int idG)
+        {
+            return dao.TraerDirector(fechaLimite, idDir, idG);
+        }
+
         //Implementan el mismo método hecho en el dao, usando el propio dao...
     }
 }
