@@ -11,7 +11,60 @@ using TPLaboratorio.Dominio;
 namespace TPLaboratorio.Datos.Implementacion
 {
     public class ConsultasDaoImpl : IConsultasDao
-    {        
+    {
+        public List<Cliente> TraerClientes()
+        {
+            List<Cliente> lClientes = new List<Cliente>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_CLIENTES");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                Cliente c = new Cliente();
+                c.CodCliente = (int)fila[0];
+                c.Nombre = fila[1].ToString();
+                c.Apellido = fila[2].ToString();
+                c.Correo = fila[3].ToString();
+                c.NroTel = (int)fila[4];
+                c.CodBarrio = (int)fila[5];
+                c.Calle = fila[6].ToString();
+                c.CalleNro = (int)fila[7];
+                c.Dni = (int)fila[8];
+                lClientes.Add(c);
+            }
+            return lClientes;
+        }
+        public List<FormaPago> TraerFormaPagos()
+        {
+            List<FormaPago> lFormaPagos = new List<FormaPago>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_FORMAS_PAGO");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                FormaPago f = new FormaPago();
+                f.IdFormaPago = (int)fila[0];
+                f.Descripcion = fila[1].ToString();
+                lFormaPagos.Add(f);
+            }
+            return lFormaPagos;
+        }
+        public List<Empleado> TraerEmpleado()
+        {
+            List<Empleado> lEmpleados = new List<Empleado>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_EMPLEADOS");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                Empleado e = new Empleado();
+                e.CodEmpleado = (int)fila[0];
+                e.Nombre = fila[1].ToString();
+                e.Apellido = fila[2].ToString();
+                e.Correo = fila[3].ToString();
+                e.NroTel = (int)fila[4];
+                e.CodBarrio = (int)fila[5];
+                e.Calle = fila[6].ToString();
+                e.CalleNro = (int)fila[7];
+                e.Dni = (int)fila[8];
+                lEmpleados.Add(e);
+            }
+            return lEmpleados;
+        }
         public List<Comprobante> TraerComprobantesFiltrados(Comprobante c)
         {
             List<Comprobante> lComprobantes = new List<Comprobante>();
@@ -85,7 +138,7 @@ namespace TPLaboratorio.Datos.Implementacion
             lst.Add(new Parametro("@fecha_hasta", fechaHasta));
 
 
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_PELICULAS]", lst);
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_PELICULAS2]", lst);
 
             return tabla;
         }

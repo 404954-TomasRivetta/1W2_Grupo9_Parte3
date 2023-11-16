@@ -14,6 +14,9 @@ namespace TPLaboratorio.Datos.Interfaz
         List<Comprobante> TraerComprobantesFiltrados(Comprobante c);//rodri
 
         DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta);
+        List<Cliente> TraerClientes();
+        List<Empleado> TraerEmpleado();
+        List<FormaPago> TraerFormaPagos();
         List<Director> ObtenerDirectores(); //nico valen
         List<TipoPelicula> ObtenerGeneros(); //nico valen
     }

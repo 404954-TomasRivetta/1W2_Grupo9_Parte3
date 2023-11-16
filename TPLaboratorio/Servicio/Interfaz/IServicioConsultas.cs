@@ -15,6 +15,9 @@ namespace TPLaboratorio.Servicio.Interfaz
         List<TipoPelicula> ObtenerGeneros(); //nico valen
 
         DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta);
+        List<Cliente> TraerClientes();
+        List<Empleado> TraerEmpleados();
+        List<FormaPago> TraerFormaPago();
         //Acá simplemente pondrán el mismo método hecho en el dao...
     }
 }

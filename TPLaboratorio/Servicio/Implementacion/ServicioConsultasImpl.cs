@@ -33,8 +33,18 @@ namespace TPLaboratorio.Servicio.Implementacion
         {
             return dao.ObtenerGeneros();
         }
-
-     
+        public List<Cliente> TraerClientes()
+        {
+            return dao.TraerClientes();
+        }
+        public List<Empleado> TraerEmpleados()
+        {
+            return dao.TraerEmpleado();
+        }
+        public List<FormaPago> TraerFormaPago()
+        {
+            return dao.TraerFormaPagos();
+        }
         DataTable IServicioConsultas.TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta)
         {
             return dao.TraerPeliculaFiltrada(fechaDesde, fechaHasta);
