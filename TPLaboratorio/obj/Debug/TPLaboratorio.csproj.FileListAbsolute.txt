@@ -70,3 +70,6 @@ C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLabor
 C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb
 C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmMainMenu.resources
 C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmAcercaDe.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmAcercaDe.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmConsultarReservas.resources
+D:\rodri-tp-LC2-parte 3\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmMainMenu.resources
