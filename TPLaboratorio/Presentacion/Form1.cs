@@ -27,7 +27,7 @@ namespace TPLaboratorio.Presentacion
         {
             cboDirectores.DataSource = servicio.ObtenerDirectores();
             cboDirectores.ValueMember = "id";
-            cboDirectores.DisplayMember = "Nombre";
+            cboDirectores.DisplayMember = "Apellido";
         }
 
         private void cargarComboGeneros()

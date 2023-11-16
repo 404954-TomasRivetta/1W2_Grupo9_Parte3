@@ -1,0 +1,94 @@
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (2,1, 'Fernando', '16/11/2023');
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (12,15, 'Garcia', '16/11/2023');
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (10,13, 'Gufe', '16/11/2023');
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (4,6, 'Artaza', '16/11/2023');
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (9,10, 'Cati', '16/11/2023');
+INSERT INTO reservas(id_cliente, id_butaca, nombre_reserva, fecha_reserva) VALUES (7,11, 'Lopez', '16/11/2023');
+
+--Comprobantes
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (2,3,4,5)
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (3,1,1,2)
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (5,2,2,20)
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (1,4,6,10)
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (4,4,3,4)
+INSERT INTO comprobantes (id_cliente,id_forma_pago,id_empleado,cant_entradas) VALUES (6,1,5,2)
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (7, 1, 3, 8);
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (8, 1, 5, 15);
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (9, 2, 4, 12);
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (10, 2, 2, 6);
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (11, 3, 1, 3);
+INSERT INTO comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (12, 4, 6, 18);
+
+--Tickets
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (4,2,1500)
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (3,3,1800)
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (1,5,1700)
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (5,4,2000)
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (1,1,1425)
+INSERT INTO tickets (id_comprobante,id_butacas,pre_unitario) VALUES (6,6,1550)
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (7, 7, 900);
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (8, 8, 3900);
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (9, 9, 5750);
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (10, 10, 4100);
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (11, 11, 850);
+INSERT INTO tickets (id_comprobante, id_butacas, pre_unitario) VALUES (12, 12, 1800);
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(3, 4, '15/11/2023', 23)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 2, 11, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (6, 2, 1, 9)
+insert tickets (id_comprobante, id_butacas, pre_unitario) VALUES (7, 7, 2500)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(2, 5, '14-11-2023', 22)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 3, 12, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (5, 2, 1, 4)
+insert tickets (id_comprobante, id_butacas, pre_unitario) VALUES (8, 8, 1699)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 6, '12-11-2023', 21)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 4, 13, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (4, 1, 1, 2)
+insert tickets (id_comprobante, id_butacas, pre_unitario) VALUES (9, 9, 900)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(2, 7, '11-11-2023', 20)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 5, 14, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (3, 1, 1, 4)
+insert tickets (id_comprobante, id_butacas, pre_unitario) VALUES (10, 10, 2199)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(2, 8, '15-11-2023', 19)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 6, 15, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 1, 1, 10)
+insert tickets (id_comprobante, id_butacas, pre_unitario) VALUES (11, 11, 999)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 9, '10-11-2023', 18)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 6, 15, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 6)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (12, 12, 1800)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 10, '9-11-2023', 17)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 7, 17, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 8)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (13, 13, 2200)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 9, '15-11-2023', 16)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 7, 18, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 7)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (14, 14, 900)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 4, '16-11-2023', 22)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 9, 18, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 8)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (15, 15, 1000)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 7, '12-11-2023', 22)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 9, 19, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 8)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (16, 16, 1000)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 5, '8-11-2023', 22)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 10, 20, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 8)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (17, 17, 2800)
+
+insert into funciones (id_sala, id_pelicula, fecha, hora)values(1, 6, '8-11-2023', 22)
+insert into butacas (fila, columna, id_funcion, id_estado_butaca) VALUES (2, 10, 21, 2);
+insert into comprobantes (id_cliente, id_forma_pago, id_empleado, cant_entradas) VALUES (2, 2, 1, 8)
+insert into tickets (id_comprobante, id_butacas, pre_unitario) VALUES (18, 18, 2800)
