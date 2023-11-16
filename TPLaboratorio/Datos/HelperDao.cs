@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TPLaboratorio.Datos
 {
@@ -87,9 +83,9 @@ namespace TPLaboratorio.Datos
             conexion.Open();
             DataTable tabla = new DataTable();
             SqlCommand comando = new SqlCommand();
-            comando.Connection= conexion;
+            comando.Connection = conexion;
             comando.CommandType = CommandType.Text;
-            comando.CommandText=consulta;
+            comando.CommandText = consulta;
             tabla.Load(comando.ExecuteReader());
             conexion.Close();
             return tabla;

@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TPLaboratorio.Dominio;
 
 namespace TPLaboratorio.Servicio.Interfaz
@@ -14,7 +11,10 @@ namespace TPLaboratorio.Servicio.Interfaz
         List<Director> ObtenerDirectores(); //nico valen
         List<TipoPelicula> ObtenerGeneros(); //nico valen
 
-        DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta);
+        DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta); // santi alexis tomi
+
+        DataTable TraerReservaFiltrada(string nombreReserva, DateTime fechaReserva); // santi alexis tomi
+
         List<Cliente> TraerClientes();
         List<Empleado> TraerEmpleados();
         List<FormaPago> TraerFormaPago();

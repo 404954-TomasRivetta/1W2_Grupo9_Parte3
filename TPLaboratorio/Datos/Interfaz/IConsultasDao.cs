@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TPLaboratorio.Dominio;
 
 namespace TPLaboratorio.Datos.Interfaz
@@ -13,7 +10,10 @@ namespace TPLaboratorio.Datos.Interfaz
         //Cada uno hará un método para hacer la consulta que quiera...
         List<Comprobante> TraerComprobantesFiltrados(Comprobante c);//rodri
 
-        DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta);
+        DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta); // santi alexis tomi
+
+        DataTable TraerReservaFiltrada(string nombreReserva, DateTime fechaReserva); // santi alexis tomi
+
         List<Cliente> TraerClientes();
         List<Empleado> TraerEmpleado();
         List<FormaPago> TraerFormaPagos();

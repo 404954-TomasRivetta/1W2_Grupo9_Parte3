@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TPLaboratorio.Dominio
 {
@@ -15,7 +11,7 @@ namespace TPLaboratorio.Dominio
         public int CantEntradasHasta { get; set; }
         public int CantEntradas { get; set; }
         public List<Ticket> lTickets { get; set; }
-        public int IdComprobante { get;set; }
+        public int IdComprobante { get; set; }
         public string NombreCliente { get; set; }
         public string NombreEmpleado { get; set; }
         public string FormaPago { get; set; }
@@ -26,28 +22,28 @@ namespace TPLaboratorio.Dominio
         {
             lTickets = new List<Ticket>();
         }
-        public Comprobante(int idCliente,int idFormaPago,int idEmpleado,int cantEntradasDesde,int cantEntradasHasta,/*int cantEntradas,*/int idComprobante)        
+        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,/*int cantEntradas,*/int idComprobante)
         {
-            IdCliente=idCliente;
-            IdForma_pago=idFormaPago;
-            IdEmpleado=idEmpleado;
+            IdCliente = idCliente;
+            IdForma_pago = idFormaPago;
+            IdEmpleado = idEmpleado;
             CantEntradasDesde = cantEntradasDesde;
-            CantEntradasHasta=cantEntradasHasta;
+            CantEntradasHasta = cantEntradasHasta;
             //CantEntradas=cantEntradas;
-            IdComprobante=idComprobante;
+            IdComprobante = idComprobante;
         }
-        public Comprobante(int idCli, int idFormaPago, int idEmpleado, int cantDesde, int cantHasta, int idComp,decimal importeDesde,decimal importeHasta)
+        public Comprobante(int idCli, int idFormaPago, int idEmpleado, int cantDesde, int cantHasta, int idComp, decimal importeDesde, decimal importeHasta)
         {
             IdCliente = idCli;
             IdForma_pago = idFormaPago;
-            IdEmpleado=idEmpleado;
-            CantEntradasDesde=cantDesde;
-            CantEntradasHasta =cantHasta;
-            IdComprobante=idComp;
+            IdEmpleado = idEmpleado;
+            CantEntradasDesde = cantDesde;
+            CantEntradasHasta = cantHasta;
+            IdComprobante = idComp;
             ImporteDesde = importeDesde;
             ImporteHasta = importeHasta;
         }
-        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,int idComprobante, string nombreCliente, string nombreEmpleado, string formaPago, decimal importeDesde, decimal importeHasta, decimal importe)
+        public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta, int idComprobante, string nombreCliente, string nombreEmpleado, string formaPago, decimal importeDesde, decimal importeHasta, decimal importe)
         {
             IdCliente = idCliente;
             IdForma_pago = idFormaPago;
@@ -63,7 +59,7 @@ namespace TPLaboratorio.Dominio
             ImporteHasta = importeHasta;
             Importe = importe;
         }
-        public Comprobante(int idComprobante, int idCliente, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,decimal importeDesde, decimal importeHasta)
+        public Comprobante(int idComprobante, int idCliente, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta, decimal importeDesde, decimal importeHasta)
         {
             IdCliente = idCliente;
             IdEmpleado = idEmpleado;
