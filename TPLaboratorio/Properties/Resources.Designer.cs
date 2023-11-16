@@ -68,5 +68,14 @@ namespace TPLaboratorio.Properties {
                 return ResourceManager.GetString("CadenaConexion", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Data Source=PCCesar;Initial Catalog=lc_tpi_cine;Integrated Security=True;Encrypt=False.
+        /// </summary>
+        internal static string CadenaConexion404954 {
+            get {
+                return ResourceManager.GetString("CadenaConexion404954", resourceCulture);
+            }
+        }
     }
 }

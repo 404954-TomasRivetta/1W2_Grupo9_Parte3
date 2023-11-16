@@ -120,4 +120,7 @@
   <data name="CadenaConexion" xml:space="preserve">
     <value>Data Source=DESKTOP-S1JD39O\SQLEXPRESS;Initial Catalog=lc_tpi_cine;Integrated Security=True</value>
   </data>
+  <data name="CadenaConexion404954" xml:space="preserve">
+    <value>Data Source=PCCesar;Initial Catalog=lc_tpi_cine;Integrated Security=True;Encrypt=False</value>
+  </data>
 </root>

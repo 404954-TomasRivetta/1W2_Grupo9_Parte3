@@ -20,14 +20,15 @@ namespace TPLaboratorio.Presentacion
         private void FrmConsultarReservas_Load(object sender, EventArgs e)
         {
             txtNombreReserva.Text = string.Empty;
-            dtpFechaReserva.Value = DateTime.Now;
+            dtpFechaReserva.Value = DateTime.Today;
 
         }
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            DataTable tabla = servicio.TraerReservaFiltrada(txtNombreReserva.Text, dtpFechaReserva.Value);
             dgvReservas.Rows.Clear();
+            DataTable tabla = servicio.TraerReservaFiltrada(txtNombreReserva.Text, dtpFechaReserva.Value);
+
             foreach (DataRow fila in tabla.Rows)
             {
                 dgvReservas.Rows.Add(new object[] {
@@ -37,7 +38,6 @@ namespace TPLaboratorio.Presentacion
                     fila[3].ToString(),
                     fila[4].ToString(),
                     fila[5].ToString()
-
                 });
 
 
@@ -49,7 +49,15 @@ namespace TPLaboratorio.Presentacion
             }
 
             txtNombreReserva.Text = string.Empty;
-            dtpFechaReserva.Value = DateTime.Now;
+            dtpFechaReserva.Value = DateTime.Today;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seguro desesa salir?","Control",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
         }
     }
 }

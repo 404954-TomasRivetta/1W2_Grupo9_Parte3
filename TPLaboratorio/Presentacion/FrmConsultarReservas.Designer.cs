@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreReserva = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtpFechaReserva = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
             this.ColNomReserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +39,9 @@
             this.ColPeliReservada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFechaPeli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColHoraPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpFechaReserva = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 27);
+            this.label1.Location = new System.Drawing.Point(286, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 0;
@@ -56,10 +57,10 @@
             // 
             // txtNombreReserva
             // 
-            this.txtNombreReserva.Location = new System.Drawing.Point(146, 24);
+            this.txtNombreReserva.Location = new System.Drawing.Point(400, 22);
             this.txtNombreReserva.Name = "txtNombreReserva";
-            this.txtNombreReserva.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreReserva.TabIndex = 1;
+            this.txtNombreReserva.Size = new System.Drawing.Size(116, 20);
+            this.txtNombreReserva.TabIndex = 8;
             // 
             // groupBox1
             // 
@@ -70,30 +71,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(598, 112);
+            this.groupBox1.Size = new System.Drawing.Size(560, 93);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
-            // dtpFechaReserva
-            // 
-            this.dtpFechaReserva.Location = new System.Drawing.Point(373, 24);
-            this.dtpFechaReserva.Name = "dtpFechaReserva";
-            this.dtpFechaReserva.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaReserva.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(292, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Fecha reserva";
-            // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(457, 62);
+            this.btnFiltrar.Location = new System.Drawing.Point(400, 48);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(116, 32);
             this.btnFiltrar.TabIndex = 4;
@@ -114,10 +99,10 @@
             this.ColPeliReservada,
             this.ColFechaPeli,
             this.ColHoraPelicula});
-            this.dgvReservas.Location = new System.Drawing.Point(12, 130);
+            this.dgvReservas.Location = new System.Drawing.Point(12, 120);
             this.dgvReservas.Name = "dgvReservas";
             this.dgvReservas.ReadOnly = true;
-            this.dgvReservas.Size = new System.Drawing.Size(598, 150);
+            this.dgvReservas.Size = new System.Drawing.Size(560, 160);
             this.dgvReservas.TabIndex = 3;
             // 
             // ColNomReserva
@@ -156,14 +141,43 @@
             this.ColHoraPelicula.Name = "ColHoraPelicula";
             this.ColHoraPelicula.ReadOnly = true;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(434, 295);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(138, 26);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(51, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Fecha reserva";
+            // 
+            // dtpFechaReserva
+            // 
+            this.dtpFechaReserva.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaReserva.Location = new System.Drawing.Point(132, 22);
+            this.dtpFechaReserva.Name = "dtpFechaReserva";
+            this.dtpFechaReserva.Size = new System.Drawing.Size(116, 20);
+            this.dtpFechaReserva.TabIndex = 2;
+            // 
             // FrmConsultarReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 334);
+            this.ClientSize = new System.Drawing.Size(591, 337);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvReservas);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarReservas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarReservas";
             this.Load += new System.EventHandler(this.FrmConsultarReservas_Load);
             this.groupBox1.ResumeLayout(false);
@@ -179,8 +193,6 @@
         private System.Windows.Forms.TextBox txtNombreReserva;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtpFechaReserva;
         private System.Windows.Forms.DataGridView dgvReservas;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNomReserva;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCliente;
@@ -188,5 +200,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPeliReservada;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFechaPeli;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColHoraPelicula;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpFechaReserva;
     }
 }

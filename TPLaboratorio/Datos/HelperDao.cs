@@ -11,7 +11,7 @@ namespace TPLaboratorio.Datos
 
         public HelperDao()
         {
-            conexion = new SqlConnection(Properties.Resources.CadenaConexion);
+            conexion = new SqlConnection(Properties.Resources.CadenaConexion404954);
         }
 
         public static HelperDao ObtenerInstancia()

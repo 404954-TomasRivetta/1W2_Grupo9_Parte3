@@ -141,13 +141,16 @@ namespace TPLaboratorio.Datos.Implementacion
 
         public DataTable TraerReservaFiltrada(string nombreReserva, DateTime fechaReserva)
         {
+
+            DataTable table = new DataTable();
+
             List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@@nombreReserva", nombreReserva));
-            lst.Add(new Parametro("@@fechaReserva", fechaReserva));
+            lst.Add(new Parametro("@nombreReserva", nombreReserva));
+            lst.Add(new Parametro("@fechaReserva", fechaReserva));
 
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_RESERVAS]", lst);
+            table = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_RESERVAS]", lst);
 
-            return tabla;
+            return table;
         }
     }
 }
