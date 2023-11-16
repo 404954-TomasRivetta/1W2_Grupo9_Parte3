@@ -68,3 +68,5 @@ C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLabor
 C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.exe
 C:\Users\Usuario\Desktop\dadac\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.pdb
+C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmMainMenu.resources
+C:\Users\CESAR\Desktop\1W2_Grupo9_Parte3\TPLaboratorio\obj\Debug\TPLaboratorio.Presentacion.FrmAcercaDe.resources

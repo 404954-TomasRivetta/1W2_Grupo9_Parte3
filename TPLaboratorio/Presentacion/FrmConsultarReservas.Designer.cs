@@ -32,6 +32,8 @@
             this.txtNombreReserva = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpFechaReserva = new System.Windows.Forms.DateTimePicker();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
             this.ColNomReserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,8 +42,6 @@
             this.ColFechaPeli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColHoraPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dtpFechaReserva = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             this.SuspendLayout();
@@ -49,17 +49,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(286, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(252, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 13);
+            this.label1.Size = new System.Drawing.Size(163, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre de la reserva";
+            this.label1.Text = "Nombre de la reserva:";
             // 
             // txtNombreReserva
             // 
-            this.txtNombreReserva.Location = new System.Drawing.Point(400, 22);
+            this.txtNombreReserva.Location = new System.Drawing.Point(417, 25);
             this.txtNombreReserva.Name = "txtNombreReserva";
-            this.txtNombreReserva.Size = new System.Drawing.Size(116, 20);
+            this.txtNombreReserva.Size = new System.Drawing.Size(116, 26);
             this.txtNombreReserva.TabIndex = 8;
             // 
             // groupBox1
@@ -69,22 +70,43 @@
             this.groupBox1.Controls.Add(this.dtpFechaReserva);
             this.groupBox1.Controls.Add(this.txtNombreReserva);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(560, 93);
+            this.groupBox1.Size = new System.Drawing.Size(560, 94);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(400, 48);
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.Location = new System.Drawing.Point(417, 57);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(116, 32);
+            this.btnFiltrar.Size = new System.Drawing.Size(116, 30);
             this.btnFiltrar.TabIndex = 4;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Fecha reserva:";
+            // 
+            // dtpFechaReserva
+            // 
+            this.dtpFechaReserva.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaReserva.Location = new System.Drawing.Point(132, 25);
+            this.dtpFechaReserva.Name = "dtpFechaReserva";
+            this.dtpFechaReserva.Size = new System.Drawing.Size(114, 26);
+            this.dtpFechaReserva.TabIndex = 2;
             // 
             // dgvReservas
             // 
@@ -143,6 +165,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(434, 295);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(138, 26);
@@ -151,31 +174,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Fecha reserva";
-            // 
-            // dtpFechaReserva
-            // 
-            this.dtpFechaReserva.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaReserva.Location = new System.Drawing.Point(132, 22);
-            this.dtpFechaReserva.Name = "dtpFechaReserva";
-            this.dtpFechaReserva.Size = new System.Drawing.Size(116, 20);
-            this.dtpFechaReserva.TabIndex = 2;
-            // 
             // FrmConsultarReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(591, 337);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvReservas);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(607, 376);
+            this.MinimumSize = new System.Drawing.Size(607, 376);
             this.Name = "FrmConsultarReservas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarReservas";

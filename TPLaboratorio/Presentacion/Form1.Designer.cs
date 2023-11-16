@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvDir = new System.Windows.Forms.DataGridView();
+            this.ColApe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPersonas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColRecaudacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColGen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,11 +42,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.cboGeneros = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.ColApe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPersonas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColRecaudacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColGen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,87 +56,12 @@
             this.ColPersonas,
             this.ColRecaudacion,
             this.ColGen});
-            this.dgvDir.Location = new System.Drawing.Point(71, 246);
-            this.dgvDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDir.Location = new System.Drawing.Point(53, 200);
             this.dgvDir.Name = "dgvDir";
             this.dgvDir.ReadOnly = true;
             this.dgvDir.RowHeadersWidth = 51;
-            this.dgvDir.Size = new System.Drawing.Size(725, 236);
+            this.dgvDir.Size = new System.Drawing.Size(544, 192);
             this.dgvDir.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Director:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 107);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 25);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Genero:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 172);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 25);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Fecha Desde:";
-            // 
-            // cboDirectores
-            // 
-            this.cboDirectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboDirectores.FormattingEnabled = true;
-            this.cboDirectores.Location = new System.Drawing.Point(243, 42);
-            this.cboDirectores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cboDirectores.Name = "cboDirectores";
-            this.cboDirectores.Size = new System.Drawing.Size(160, 33);
-            this.cboDirectores.TabIndex = 12;
-            // 
-            // dtpLim
-            // 
-            this.dtpLim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpLim.Location = new System.Drawing.Point(243, 167);
-            this.dtpLim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dtpLim.Name = "dtpLim";
-            this.dtpLim.Size = new System.Drawing.Size(265, 30);
-            this.dtpLim.TabIndex = 13;
-            // 
-            // cboGeneros
-            // 
-            this.cboGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGeneros.FormattingEnabled = true;
-            this.cboGeneros.Location = new System.Drawing.Point(243, 103);
-            this.cboGeneros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cboGeneros.Name = "cboGeneros";
-            this.cboGeneros.Size = new System.Drawing.Size(160, 33);
-            this.cboGeneros.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(649, 159);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 52);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ColApe
             // 
@@ -178,11 +103,79 @@
             this.ColGen.ReadOnly = true;
             this.ColGen.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Director:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(49, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Genero:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(49, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Fecha Desde:";
+            // 
+            // cboDirectores
+            // 
+            this.cboDirectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDirectores.FormattingEnabled = true;
+            this.cboDirectores.Location = new System.Drawing.Point(182, 34);
+            this.cboDirectores.Name = "cboDirectores";
+            this.cboDirectores.Size = new System.Drawing.Size(121, 28);
+            this.cboDirectores.TabIndex = 12;
+            // 
+            // dtpLim
+            // 
+            this.dtpLim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpLim.Location = new System.Drawing.Point(182, 136);
+            this.dtpLim.Name = "dtpLim";
+            this.dtpLim.Size = new System.Drawing.Size(200, 26);
+            this.dtpLim.TabIndex = 13;
+            // 
+            // cboGeneros
+            // 
+            this.cboGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboGeneros.FormattingEnabled = true;
+            this.cboGeneros.Location = new System.Drawing.Point(182, 84);
+            this.cboGeneros.Name = "cboGeneros";
+            this.cboGeneros.Size = new System.Drawing.Size(121, 28);
+            this.cboGeneros.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(487, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 42);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Consultar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 554);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(680, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboGeneros);
             this.Controls.Add(this.dtpLim);
@@ -191,8 +184,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDir);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(696, 489);
+            this.MinimumSize = new System.Drawing.Size(696, 489);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDir)).EndInit();

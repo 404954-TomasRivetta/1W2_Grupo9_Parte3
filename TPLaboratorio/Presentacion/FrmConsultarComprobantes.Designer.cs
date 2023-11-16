@@ -380,7 +380,10 @@
             this.Controls.Add(this.dgvComprobantes);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(587, 633);
+            this.MinimumSize = new System.Drawing.Size(587, 633);
             this.Name = "FrmConsultarComprobantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprobantes";
             this.Load += new System.EventHandler(this.FrmConsultaFunciones_Load);
             this.groupBox1.ResumeLayout(false);
