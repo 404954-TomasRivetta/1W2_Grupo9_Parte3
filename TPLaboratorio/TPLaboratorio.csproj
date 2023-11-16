@@ -93,11 +93,11 @@
     <Compile Include="Presentacion\FrmConsultarReservas.Designer.cs">
       <DependentUpon>FrmConsultarReservas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\FrmMainMenu.cs">
+    <Compile Include="Presentacion\FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\FrmMainMenu.Designer.cs">
-      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    <Compile Include="Presentacion\FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,8 +118,8 @@
     <EmbeddedResource Include="Presentacion\FrmConsultarReservas.resx">
       <DependentUpon>FrmConsultarReservas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmMainMenu.resx">
-      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -144,6 +144,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

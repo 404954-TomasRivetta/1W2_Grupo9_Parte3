@@ -61,6 +61,7 @@
             this.ColCantEntradas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComprobantes)).BeginInit();
             this.SuspendLayout();
@@ -148,9 +149,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(97, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(544, 336);
+            this.groupBox1.Size = new System.Drawing.Size(544, 322);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -316,10 +317,10 @@
             this.ColFormaPago,
             this.ColCantEntradas,
             this.ColImporte});
-            this.dgvComprobantes.Location = new System.Drawing.Point(12, 393);
+            this.dgvComprobantes.Location = new System.Drawing.Point(97, 378);
             this.dgvComprobantes.Name = "dgvComprobantes";
             this.dgvComprobantes.ReadOnly = true;
-            this.dgvComprobantes.Size = new System.Drawing.Size(545, 192);
+            this.dgvComprobantes.Size = new System.Drawing.Size(545, 179);
             this.dgvComprobantes.TabIndex = 7;
             // 
             // ColId
@@ -362,7 +363,7 @@
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(416, 355);
+            this.btnFiltrar.Location = new System.Drawing.Point(497, 340);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(144, 32);
             this.btnFiltrar.TabIndex = 8;
@@ -370,18 +371,30 @@
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(504, 563);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(138, 27);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // FrmConsultarComprobantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(571, 594);
+            this.ClientSize = new System.Drawing.Size(735, 594);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvComprobantes);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(587, 633);
-            this.MinimumSize = new System.Drawing.Size(587, 633);
             this.Name = "FrmConsultarComprobantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprobantes";
@@ -428,5 +441,6 @@
         private System.Windows.Forms.Button btnNombreFormaPago;
         private System.Windows.Forms.Button btnNombreEmpleado;
         private System.Windows.Forms.Button btnNombreCliente;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

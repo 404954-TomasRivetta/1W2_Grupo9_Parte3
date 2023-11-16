@@ -48,9 +48,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(620, 383);
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(550, 457);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(91, 23);
+            this.btnSalir.Size = new System.Drawing.Size(128, 26);
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.DgvPelis);
-            this.groupBox2.Location = new System.Drawing.Point(90, 145);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(57, 187);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(621, 232);
+            this.groupBox2.Size = new System.Drawing.Size(621, 264);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados:";
@@ -79,7 +81,7 @@
             this.colEntregado});
             this.DgvPelis.Location = new System.Drawing.Point(21, 29);
             this.DgvPelis.Name = "DgvPelis";
-            this.DgvPelis.Size = new System.Drawing.Size(594, 165);
+            this.DgvPelis.Size = new System.Drawing.Size(594, 229);
             this.DgvPelis.TabIndex = 0;
             // 
             // ColNombre
@@ -113,7 +115,8 @@
             this.groupBox1.Controls.Add(this.dtpDesde);
             this.groupBox1.Controls.Add(this.btnConsultar);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(89, 45);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(56, 87);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(622, 93);
             this.groupBox1.TabIndex = 9;
@@ -123,33 +126,33 @@
             // dtpHasta
             // 
             this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHasta.Location = new System.Drawing.Point(278, 53);
+            this.dtpHasta.Location = new System.Drawing.Point(351, 49);
             this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(83, 20);
+            this.dtpHasta.Size = new System.Drawing.Size(83, 24);
             this.dtpHasta.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(193, 57);
+            this.label3.Location = new System.Drawing.Point(239, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.Size = new System.Drawing.Size(106, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Entrega Hasta:";
             // 
             // dtpDesde
             // 
             this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(106, 53);
+            this.dtpDesde.Location = new System.Drawing.Point(135, 48);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(83, 20);
+            this.dtpDesde.Size = new System.Drawing.Size(98, 24);
             this.dtpDesde.TabIndex = 5;
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(380, 48);
+            this.btnConsultar.Location = new System.Drawing.Point(494, 51);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(111, 23);
+            this.btnConsultar.Size = new System.Drawing.Size(111, 25);
             this.btnConsultar.TabIndex = 4;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -158,9 +161,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 58);
+            this.label2.Location = new System.Drawing.Point(19, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(110, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Entrega Desde:";
             // 
@@ -169,12 +172,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(735, 594);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.MaximumSize = new System.Drawing.Size(816, 489);
-            this.MinimumSize = new System.Drawing.Size(816, 489);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultaF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Fechas";

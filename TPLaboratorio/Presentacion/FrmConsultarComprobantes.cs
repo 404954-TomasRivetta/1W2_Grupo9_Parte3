@@ -247,5 +247,13 @@ namespace TPLaboratorio.Presentacion
                 btnNombreFormaPago.Text = "Filtrar por nombre";
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seguro desesa salir?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+        }
     }
 }
