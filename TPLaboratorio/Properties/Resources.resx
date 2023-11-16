@@ -123,4 +123,5 @@
   <data name="CadenaConexion404954" xml:space="preserve">
     <value>Data Source=PCCesar;Initial Catalog=lc_tpi_cine;Integrated Security=True;Encrypt=False</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
 </root>

@@ -42,6 +42,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.cboGeneros = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             // 
             this.dgvDir.AllowUserToAddRows = false;
             this.dgvDir.AllowUserToDeleteRows = false;
+            this.dgvDir.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDir.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColApe,
@@ -56,11 +58,11 @@
             this.ColPersonas,
             this.ColRecaudacion,
             this.ColGen});
-            this.dgvDir.Location = new System.Drawing.Point(53, 200);
+            this.dgvDir.Location = new System.Drawing.Point(12, 262);
             this.dgvDir.Name = "dgvDir";
             this.dgvDir.ReadOnly = true;
             this.dgvDir.RowHeadersWidth = 51;
-            this.dgvDir.Size = new System.Drawing.Size(544, 192);
+            this.dgvDir.Size = new System.Drawing.Size(680, 192);
             this.dgvDir.TabIndex = 8;
             // 
             // ColApe
@@ -69,7 +71,6 @@
             this.ColApe.MinimumWidth = 6;
             this.ColApe.Name = "ColApe";
             this.ColApe.ReadOnly = true;
-            this.ColApe.Width = 125;
             // 
             // ColEmpleado
             // 
@@ -77,7 +78,6 @@
             this.ColEmpleado.MinimumWidth = 6;
             this.ColEmpleado.Name = "ColEmpleado";
             this.ColEmpleado.ReadOnly = true;
-            this.ColEmpleado.Width = 125;
             // 
             // ColPersonas
             // 
@@ -85,7 +85,6 @@
             this.ColPersonas.MinimumWidth = 6;
             this.ColPersonas.Name = "ColPersonas";
             this.ColPersonas.ReadOnly = true;
-            this.ColPersonas.Width = 125;
             // 
             // ColRecaudacion
             // 
@@ -93,7 +92,6 @@
             this.ColRecaudacion.MinimumWidth = 6;
             this.ColRecaudacion.Name = "ColRecaudacion";
             this.ColRecaudacion.ReadOnly = true;
-            this.ColRecaudacion.Width = 125;
             // 
             // ColGen
             // 
@@ -101,13 +99,12 @@
             this.ColGen.MinimumWidth = 6;
             this.ColGen.Name = "ColGen";
             this.ColGen.ReadOnly = true;
-            this.ColGen.Width = 125;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 37);
+            this.label1.Location = new System.Drawing.Point(82, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 9;
@@ -117,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 87);
+            this.label2.Location = new System.Drawing.Point(82, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 10;
@@ -127,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 140);
+            this.label3.Location = new System.Drawing.Point(82, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 11;
@@ -135,9 +132,10 @@
             // 
             // cboDirectores
             // 
+            this.cboDirectores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDirectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDirectores.FormattingEnabled = true;
-            this.cboDirectores.Location = new System.Drawing.Point(182, 34);
+            this.cboDirectores.Location = new System.Drawing.Point(215, 85);
             this.cboDirectores.Name = "cboDirectores";
             this.cboDirectores.Size = new System.Drawing.Size(121, 28);
             this.cboDirectores.TabIndex = 12;
@@ -145,16 +143,17 @@
             // dtpLim
             // 
             this.dtpLim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpLim.Location = new System.Drawing.Point(182, 136);
+            this.dtpLim.Location = new System.Drawing.Point(215, 187);
             this.dtpLim.Name = "dtpLim";
             this.dtpLim.Size = new System.Drawing.Size(200, 26);
             this.dtpLim.TabIndex = 13;
             // 
             // cboGeneros
             // 
+            this.cboGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGeneros.FormattingEnabled = true;
-            this.cboGeneros.Location = new System.Drawing.Point(182, 84);
+            this.cboGeneros.Location = new System.Drawing.Point(215, 135);
             this.cboGeneros.Name = "cboGeneros";
             this.cboGeneros.Size = new System.Drawing.Size(121, 28);
             this.cboGeneros.TabIndex = 14;
@@ -162,7 +161,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(487, 129);
+            this.button1.Location = new System.Drawing.Point(520, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 42);
             this.button1.TabIndex = 15;
@@ -170,12 +169,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(564, 469);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(128, 26);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(680, 450);
+            this.ClientSize = new System.Drawing.Size(719, 555);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboGeneros);
             this.Controls.Add(this.dtpLim);
@@ -184,8 +195,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDir);
-            this.MaximumSize = new System.Drawing.Size(696, 489);
-            this.MinimumSize = new System.Drawing.Size(696, 489);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -212,5 +222,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPersonas;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColRecaudacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColGen;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
