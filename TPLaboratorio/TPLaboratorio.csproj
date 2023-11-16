@@ -69,41 +69,17 @@
     <Compile Include="Presentacion\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmConsultaF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmConsultaF.Designer.cs">
+      <DependentUpon>FrmConsultaF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\FrmConsultarComprobantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\FrmConsultarComprobantes.Designer.cs">
       <DependentUpon>FrmConsultarComprobantes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro2.Designer.cs">
-      <DependentUpon>FrmConsultaNro2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro3.Designer.cs">
-      <DependentUpon>FrmConsultaNro3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro4.Designer.cs">
-      <DependentUpon>FrmConsultaNro4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro5.Designer.cs">
-      <DependentUpon>FrmConsultaNro5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmConsultaNro6.Designer.cs">
-      <DependentUpon>FrmConsultaNro6.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,23 +88,11 @@
     <EmbeddedResource Include="Presentacion\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmConsultaF.resx">
+      <DependentUpon>FrmConsultaF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmConsultarComprobantes.resx">
       <DependentUpon>FrmConsultarComprobantes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmConsultaNro2.resx">
-      <DependentUpon>FrmConsultaNro2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmConsultaNro3.resx">
-      <DependentUpon>FrmConsultaNro3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmConsultaNro4.resx">
-      <DependentUpon>FrmConsultaNro4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmConsultaNro5.resx">
-      <DependentUpon>FrmConsultaNro5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmConsultaNro6.resx">
-      <DependentUpon>FrmConsultaNro6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

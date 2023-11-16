@@ -48,7 +48,7 @@ namespace TPLaboratorio.Datos.Implementacion
             return lComprobantes;
         }
         
-        public List<Director> obtenerDirectores()
+        public List<Director> ObtenerDirectores()
         {
             List<Director> lDirectores = new List<Director>();
             DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_DIRECTORES");
@@ -76,6 +76,21 @@ namespace TPLaboratorio.Datos.Implementacion
             }
             return lGeneros;
         }
+        public DataTable TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta)
+        {
+            DataTable Ex = new DataTable();
+
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@fecha_desde", fechaDesde));
+            lst.Add(new Parametro("@fecha_hasta", fechaHasta));
+
+
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("[dbo].[SP_CONSULTAR_PELICULAS]", lst);
+
+            return tabla;
+        }
+
+
 
     }
 }

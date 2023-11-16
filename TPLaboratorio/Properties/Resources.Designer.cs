@@ -61,7 +61,7 @@ namespace TPLaboratorio.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-S1JD39O\SQLEXPRESS;Initial Catalog=lc_tpi_cine;Integrated Security=True.
+        ///   Busca una cadena traducida similar a Data Source=abbys;Initial Catalog=lc_tpi_cinee;Integrated Security=True.
         /// </summary>
         internal static string CadenaConexion {
             get {

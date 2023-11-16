@@ -34,6 +34,12 @@ namespace TPLaboratorio.Servicio.Implementacion
             return dao.ObtenerGeneros();
         }
 
+     
+        DataTable IServicioConsultas.TraerPeliculaFiltrada(DateTime fechaDesde, DateTime fechaHasta)
+        {
+            return dao.TraerPeliculaFiltrada(fechaDesde, fechaHasta);
+        }
+
         //Implementan el mismo método hecho en el dao, usando el propio dao...
     }
 }
