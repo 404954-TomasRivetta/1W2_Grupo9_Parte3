@@ -9,6 +9,7 @@ namespace TPLaboratorio.Dominio
     public class Cliente
     {
         public int CodCliente { get; set; }
+        public string NombreCompleto => $"{Nombre} {Apellido}";
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Correo { get; set; }

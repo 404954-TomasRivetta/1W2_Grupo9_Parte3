@@ -36,6 +36,17 @@ namespace TPLaboratorio.Dominio
             //CantEntradas=cantEntradas;
             IdComprobante=idComprobante;
         }
+        public Comprobante(int idCli, int idFormaPago, int idEmpleado, int cantDesde, int cantHasta, int idComp,decimal importeDesde,decimal importeHasta)
+        {
+            IdCliente = idCli;
+            IdForma_pago = idFormaPago;
+            IdEmpleado=idEmpleado;
+            CantEntradasDesde=cantDesde;
+            CantEntradasHasta =cantHasta;
+            IdComprobante=idComp;
+            ImporteDesde = importeDesde;
+            ImporteHasta = importeHasta;
+        }
         public Comprobante(int idCliente, int idFormaPago, int idEmpleado, int cantEntradasDesde, int cantEntradasHasta,int idComprobante, string nombreCliente, string nombreEmpleado, string formaPago, decimal importeDesde, decimal importeHasta, decimal importe)
         {
             IdCliente = idCliente;

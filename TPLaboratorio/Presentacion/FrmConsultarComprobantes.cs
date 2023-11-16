@@ -15,6 +15,9 @@ namespace TPLaboratorio.Presentacion
 {
     public partial class FrmConsultarComprobantes : Form
     {
+        bool filtrarPorNombreCliente = false;
+        bool filtrarPorNombreFormaPago = false;
+        bool filtrarPorNombreEmpleado = false;
 
         //Rodri
         IServicioConsultas servicio;
@@ -25,9 +28,52 @@ namespace TPLaboratorio.Presentacion
         }        
         private void FrmConsultaFunciones_Load(object sender, EventArgs e)
         {
-            
+            cboClientes.Visible = false;
+            cboEmpleado.Visible = false;
+            cboFormaPago.Visible = false;
+            CargarClientes();
+            CargarEmpleados();
+            CargarFormasPago();
+            LimpiarSeleccionBoxs();
         }
-
+        private void LimpiarSeleccionBoxs()
+        {
+            cboClientes.SelectedIndex = -1;
+            cboEmpleado.SelectedIndex = -1;
+            cboFormaPago.SelectedIndex = -1;
+        }
+        private void CargarClientes()
+        {
+            List<Cliente>lClientes = servicio.TraerClientes();
+            cboClientes.DataSource=lClientes.Select(c=> new
+            {
+                NombreCompleto= $"{c.Nombre} {c.Apellido}",
+                CodCliente = c.CodCliente
+            }).ToList();
+        
+            cboClientes.DisplayMember = "NombreCompleto";
+            cboClientes.ValueMember = "CodCliente";
+            cboClientes.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+        private void CargarEmpleados()
+        {
+            List<Empleado> lEmpleados = servicio.TraerEmpleados();
+            cboEmpleado.DataSource = lEmpleados.Select(e => new
+            {
+                NombreCompleto = $"{e.Nombre} {e.Apellido}",
+                CodEmpleado = e.CodEmpleado
+            }).ToList();
+            cboEmpleado.DisplayMember = "NombreCompleto";
+            cboEmpleado.ValueMember = "CodEmpleado";
+            cboEmpleado.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+        private void CargarFormasPago()
+        {
+            cboFormaPago.DataSource = servicio.TraerFormaPago();
+            cboFormaPago.ValueMember = "IdFormaPago";
+            cboFormaPago.DisplayMember = "Descripcion";
+            cboFormaPago.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
@@ -35,6 +81,9 @@ namespace TPLaboratorio.Presentacion
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
+            //cboClientes.SelectedIndex = -1;
+            //cboEmpleado.SelectedIndex = -1;
+            //cboFormaPago.SelectedIndex = -1;
             ValidarDatos();
             dgvComprobantes.Rows.Clear();
             TraerComprobantes();
@@ -46,17 +95,17 @@ namespace TPLaboratorio.Presentacion
                 MessageBox.Show("Debe ingresar un comprobante valido..", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (!string.IsNullOrEmpty(txtCliente.Text) && !int.TryParse(txtCliente.Text, out _))
+            if (!string.IsNullOrEmpty(txtCliente.Text) && !int.TryParse(txtCliente.Text, out _)&&cboClientes.SelectedIndex==-1)
             {
                 MessageBox.Show("Debe ingresar un cliente valido..", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (!string.IsNullOrEmpty(txtEmpleado.Text) && !int.TryParse(txtEmpleado.Text, out _))
+            if (!string.IsNullOrEmpty(txtEmpleado.Text) && !int.TryParse(txtEmpleado.Text, out _)&&cboEmpleado.SelectedIndex==-1)
             {
                 MessageBox.Show("Debe ingresar un empleado valido..", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (!string.IsNullOrEmpty(txtFormaPago.Text) && !int.TryParse(txtFormaPago.Text, out _))
+            if (!string.IsNullOrEmpty(txtFormaPago.Text) && !int.TryParse(txtFormaPago.Text, out _)&&cboFormaPago.SelectedIndex==-1)
             {
                 MessageBox.Show("Debe ingresar una forma de pago valida..", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -94,21 +143,31 @@ namespace TPLaboratorio.Presentacion
                 idComp = 0; 
             }
 
-            if (!int.TryParse(txtCliente.Text, out idCli))
+            if (!int.TryParse(txtCliente.Text, out idCli) && !filtrarPorNombreCliente)
             {
                 idCli = 0; 
             }
-
-            if (!int.TryParse(txtFormaPago.Text, out idFormaPago))
+            else if(filtrarPorNombreCliente)
+            {
+                    idCli = (int)cboClientes.SelectedValue;
+            }
+            if (!int.TryParse(txtFormaPago.Text, out idFormaPago) && !filtrarPorNombreFormaPago)
             {
                 idFormaPago = 0; 
             }
+            else if(filtrarPorNombreFormaPago)
+            {
+                idFormaPago = (int)cboFormaPago.SelectedValue;
+            }
 
-            if (!int.TryParse(txtEmpleado.Text, out idEmpleado))
+            if (!int.TryParse(txtEmpleado.Text, out idEmpleado) && !filtrarPorNombreEmpleado)
             {
                 idEmpleado = 0; 
             }
-
+            else if(filtrarPorNombreEmpleado)
+            {
+                idEmpleado = (int)cboEmpleado.SelectedValue;
+            }
             if (!int.TryParse(txtDesde.Text, out cantDesde))
             {
                 cantDesde = 0; 
@@ -129,7 +188,7 @@ namespace TPLaboratorio.Presentacion
                 importeHasta = 0;
             }
 
-                Comprobante c = new Comprobante(idComp, idCli, idEmpleado, cantDesde, cantHasta, importeDesde,importeHasta);
+                Comprobante c = new Comprobante(idCli, idFormaPago, idEmpleado, cantDesde, cantHasta,idComp,importeDesde,importeHasta);
                 List<Comprobante> lComprobantes = servicio.TraerComprobantesFiltrados(c);
 
             foreach (Comprobante co in lComprobantes)
@@ -141,6 +200,56 @@ namespace TPLaboratorio.Presentacion
         {
             MessageBox.Show($"Error al traer comprobantes: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        }
+
+        private void btnNombreCliente_Click(object sender, EventArgs e)
+        {
+            filtrarPorNombreCliente = !filtrarPorNombreCliente;
+            if(filtrarPorNombreCliente)
+            {
+                cboClientes.Visible = true;
+                txtCliente.Enabled = false;
+                btnNombreCliente.Text = "Filtrar por ID";
+            }
+            else
+            {
+                cboClientes.Visible = false;
+                txtCliente.Enabled = true;
+                btnNombreCliente.Text = "Filtrar por nombre";
+            } 
+        }
+
+        private void btnNombreEmpleado_Click(object sender, EventArgs e)
+        {
+            filtrarPorNombreEmpleado = !filtrarPorNombreEmpleado;
+            if (filtrarPorNombreEmpleado)
+            {
+                cboEmpleado.Visible = true;
+                txtEmpleado.Enabled = false;
+                btnNombreEmpleado.Text = "Filtrar por ID";
+            }
+            else
+            {
+                cboEmpleado.Visible = false;
+                txtEmpleado.Enabled = true;
+                btnNombreEmpleado.Text = "Filtrar por nombre";
+            }
+        }
+        private void btnNombreFormaPago_Click(object sender, EventArgs e)
+        {
+            filtrarPorNombreFormaPago = !filtrarPorNombreFormaPago;
+            if (filtrarPorNombreFormaPago)
+            {
+                cboFormaPago.Visible = true;
+                txtFormaPago.Enabled = false;
+                btnNombreFormaPago.Text = "Filtrar por ID";
+            }
+            else
+            {
+                cboFormaPago.Visible = false;
+                txtFormaPago.Enabled = true;
+                btnNombreFormaPago.Text = "Filtrar por nombre";
+            }
         }
     }
 }

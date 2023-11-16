@@ -11,6 +11,7 @@ namespace TPLaboratorio.Dominio
         public int CodEmpleado { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+        public string NombreCompleto => $"{Nombre} {Apellido}";
         public string Correo { get; set; }
         public int NroTel { get; set; }
         public int CodBarrio { get; set; }

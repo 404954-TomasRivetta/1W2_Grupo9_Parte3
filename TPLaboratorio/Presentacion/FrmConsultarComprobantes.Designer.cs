@@ -35,7 +35,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNombreFormaPago = new System.Windows.Forms.Button();
+            this.btnNombreEmpleado = new System.Windows.Forms.Button();
+            this.btnNombreCliente = new System.Windows.Forms.Button();
+            this.cboClientes = new System.Windows.Forms.ComboBox();
+            this.cboFormaPago = new System.Windows.Forms.ComboBox();
             this.txtDesdeImporte = new System.Windows.Forms.TextBox();
+            this.cboEmpleado = new System.Windows.Forms.ComboBox();
             this.txtHastaImporte = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -117,7 +123,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnNombreFormaPago);
+            this.groupBox1.Controls.Add(this.btnNombreEmpleado);
+            this.groupBox1.Controls.Add(this.btnNombreCliente);
+            this.groupBox1.Controls.Add(this.cboClientes);
+            this.groupBox1.Controls.Add(this.cboFormaPago);
             this.groupBox1.Controls.Add(this.txtDesdeImporte);
+            this.groupBox1.Controls.Add(this.cboEmpleado);
             this.groupBox1.Controls.Add(this.txtHastaImporte);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
@@ -143,12 +155,69 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
+            // btnNombreFormaPago
+            // 
+            this.btnNombreFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNombreFormaPago.Location = new System.Drawing.Point(208, 196);
+            this.btnNombreFormaPago.Name = "btnNombreFormaPago";
+            this.btnNombreFormaPago.Size = new System.Drawing.Size(144, 23);
+            this.btnNombreFormaPago.TabIndex = 25;
+            this.btnNombreFormaPago.Text = "Filtrar por nombre";
+            this.btnNombreFormaPago.UseVisualStyleBackColor = true;
+            this.btnNombreFormaPago.Click += new System.EventHandler(this.btnNombreFormaPago_Click);
+            // 
+            // btnNombreEmpleado
+            // 
+            this.btnNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNombreEmpleado.Location = new System.Drawing.Point(208, 140);
+            this.btnNombreEmpleado.Name = "btnNombreEmpleado";
+            this.btnNombreEmpleado.Size = new System.Drawing.Size(144, 23);
+            this.btnNombreEmpleado.TabIndex = 24;
+            this.btnNombreEmpleado.Text = "Filtrar por nombre";
+            this.btnNombreEmpleado.UseVisualStyleBackColor = true;
+            this.btnNombreEmpleado.Click += new System.EventHandler(this.btnNombreEmpleado_Click);
+            // 
+            // btnNombreCliente
+            // 
+            this.btnNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNombreCliente.Location = new System.Drawing.Point(208, 84);
+            this.btnNombreCliente.Name = "btnNombreCliente";
+            this.btnNombreCliente.Size = new System.Drawing.Size(144, 23);
+            this.btnNombreCliente.TabIndex = 23;
+            this.btnNombreCliente.Text = "Filtrar por nombre";
+            this.btnNombreCliente.UseVisualStyleBackColor = true;
+            this.btnNombreCliente.Click += new System.EventHandler(this.btnNombreCliente_Click);
+            // 
+            // cboClientes
+            // 
+            this.cboClientes.FormattingEnabled = true;
+            this.cboClientes.Location = new System.Drawing.Point(369, 83);
+            this.cboClientes.Name = "cboClientes";
+            this.cboClientes.Size = new System.Drawing.Size(167, 26);
+            this.cboClientes.TabIndex = 9;
+            // 
+            // cboFormaPago
+            // 
+            this.cboFormaPago.FormattingEnabled = true;
+            this.cboFormaPago.Location = new System.Drawing.Point(369, 192);
+            this.cboFormaPago.Name = "cboFormaPago";
+            this.cboFormaPago.Size = new System.Drawing.Size(167, 26);
+            this.cboFormaPago.TabIndex = 12;
+            // 
             // txtDesdeImporte
             // 
             this.txtDesdeImporte.Location = new System.Drawing.Point(243, 290);
             this.txtDesdeImporte.Name = "txtDesdeImporte";
             this.txtDesdeImporte.Size = new System.Drawing.Size(40, 24);
             this.txtDesdeImporte.TabIndex = 22;
+            // 
+            // cboEmpleado
+            // 
+            this.cboEmpleado.FormattingEnabled = true;
+            this.cboEmpleado.Location = new System.Drawing.Point(369, 140);
+            this.cboEmpleado.Name = "cboEmpleado";
+            this.cboEmpleado.Size = new System.Drawing.Size(167, 26);
+            this.cboEmpleado.TabIndex = 10;
             // 
             // txtHastaImporte
             // 
@@ -293,9 +362,9 @@
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(443, 364);
+            this.btnFiltrar.Location = new System.Drawing.Point(416, 355);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(117, 23);
+            this.btnFiltrar.Size = new System.Drawing.Size(144, 32);
             this.btnFiltrar.TabIndex = 8;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -306,7 +375,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(572, 597);
+            this.ClientSize = new System.Drawing.Size(571, 594);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvComprobantes);
             this.Controls.Add(this.groupBox1);
@@ -350,5 +419,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFormaPago;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantEntradas;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColImporte;
+        private System.Windows.Forms.ComboBox cboClientes;
+        private System.Windows.Forms.ComboBox cboEmpleado;
+        private System.Windows.Forms.ComboBox cboFormaPago;
+        private System.Windows.Forms.Button btnNombreFormaPago;
+        private System.Windows.Forms.Button btnNombreEmpleado;
+        private System.Windows.Forms.Button btnNombreCliente;
     }
 }
