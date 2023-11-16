@@ -37,10 +37,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboDirectores = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboGeneros = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComprobantes)).BeginInit();
             this.SuspendLayout();
@@ -122,14 +122,14 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Fecha Desde:";
             // 
-            // comboBox1
+            // cboDirectores
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 12;
+            this.cboDirectores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDirectores.FormattingEnabled = true;
+            this.cboDirectores.Location = new System.Drawing.Point(182, 34);
+            this.cboDirectores.Name = "cboDirectores";
+            this.cboDirectores.Size = new System.Drawing.Size(121, 28);
+            this.cboDirectores.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
@@ -139,14 +139,14 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 13;
             // 
-            // comboBox2
+            // cboGeneros
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(182, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 14;
+            this.cboGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboGeneros.FormattingEnabled = true;
+            this.cboGeneros.Location = new System.Drawing.Point(182, 84);
+            this.cboGeneros.Name = "cboGeneros";
+            this.cboGeneros.Size = new System.Drawing.Size(121, 28);
+            this.cboGeneros.TabIndex = 14;
             // 
             // button1
             // 
@@ -162,17 +162,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(680, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboGeneros);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboDirectores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvComprobantes);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvComprobantes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,10 +191,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboDirectores;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboGeneros;
         private System.Windows.Forms.Button button1;
     }
 }

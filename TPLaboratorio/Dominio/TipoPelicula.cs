@@ -8,11 +8,18 @@ namespace TPLaboratorio.Dominio
 {
     public class TipoPelicula
     {
-        public int IdTipoPelicula { get; set; }
-        public string Descripcion { get; set; }
+        public int id { get; set; }
+
+        public TipoPelicula(int id, string descripcion)
+        {
+            this.id = id;
+            Nombre = descripcion;
+        }
+
+        public string Nombre { get; set; }
         public override string ToString()
         {
-            return Descripcion;
+            return Nombre;
         }
     }
 }

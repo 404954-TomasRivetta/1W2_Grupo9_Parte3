@@ -24,7 +24,15 @@ namespace TPLaboratorio.Servicio.Implementacion
             return dao.TraerComprobantesFiltrados(c);
         }
 
-        
+        public List<Director> ObtenerDirectores()
+        {
+            return dao.ObtenerDirectores();
+        }
+
+        public List<TipoPelicula> ObtenerGeneros()
+        {
+            return dao.ObtenerGeneros();
+        }
 
         //Implementan el mismo método hecho en el dao, usando el propio dao...
     }

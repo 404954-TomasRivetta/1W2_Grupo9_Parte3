@@ -47,6 +47,35 @@ namespace TPLaboratorio.Datos.Implementacion
 
             return lComprobantes;
         }
+        
+        public List<Director> obtenerDirectores()
+        {
+            List<Director> lDirectores = new List<Director>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_DIRECTORES");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int codigo = Convert.ToInt32(fila[0]);
+                string nombre = fila[1].ToString();
+                string apellido = fila[2].ToString();
+                Director d = new Director(codigo, nombre, apellido);
+                lDirectores.Add(d);
+            }
+            return lDirectores;
+        }
+
+        public List<TipoPelicula> ObtenerGeneros()
+        {
+            List<TipoPelicula> lGeneros = new List<TipoPelicula>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_GENEROS");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int id = Convert.ToInt32(fila[0]);
+                string descripcion = fila[1].ToString();
+                TipoPelicula g = new TipoPelicula(id, descripcion);
+                lGeneros.Add(g);
+            }
+            return lGeneros;
+        }
 
     }
 }

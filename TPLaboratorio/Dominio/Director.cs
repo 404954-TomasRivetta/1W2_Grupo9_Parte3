@@ -8,19 +8,19 @@ namespace TPLaboratorio.Dominio
 {
     public class Director
     {
-        public int IdDirector { get; set; }
+        public int id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
 
         public Director()
         {
-            IdDirector = 0;
+            id = 0;
             Nombre = string.Empty;
             Apellido = string.Empty;
         }
-        public Director(int id, string nom, string ape)
+        public Director(int idDirector, string nom, string ape)
         {
-            IdDirector = id;
+            id = idDirector;
             Nombre = nom;
             Apellido = ape;
         }

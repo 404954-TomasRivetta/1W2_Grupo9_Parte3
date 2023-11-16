@@ -11,6 +11,8 @@ namespace TPLaboratorio.Servicio.Interfaz
     public interface IServicioConsultas
     {
         List<Comprobante> TraerComprobantesFiltrados(Comprobante c);//Rodri
+        List<Director> ObtenerDirectores(); //nico valen
+        List<TipoPelicula> ObtenerGeneros(); //nico valen
 
         //Acá simplemente pondrán el mismo método hecho en el dao...
     }

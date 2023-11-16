@@ -12,5 +12,8 @@ namespace TPLaboratorio.Datos.Interfaz
     {
         //Cada uno hará un método para hacer la consulta que quiera...
         List<Comprobante> TraerComprobantesFiltrados(Comprobante c);//rodri
+
+        List<Director> ObtenerDirectores(); //nico valen
+        List<TipoPelicula> ObtenerGeneros(); //nico valen
     }
 }
